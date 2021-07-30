@@ -6,7 +6,6 @@ class CPUFingerBurn:
         assert samples_per_second > 0, 'Sample you must!'
         sample_size_in_seconds = 8
         self.min_num_samples = 8
-        self.last_state = False
         self.temps = []
         self.num_samples = max(round(samples_per_second * sample_size_in_seconds), self.min_num_samples)
         self.delay_between_samples = 1 / samples_per_second
