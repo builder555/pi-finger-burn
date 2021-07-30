@@ -1,6 +1,7 @@
 ## pi-finger-burn
 
 A CPU Button state machine: it changes the state when you touch the CPU with your finger
+
 Run it on a Pi (or any other system that outputs temperature)
 
 # DO NOT USE ACTUAL FINGER!
@@ -15,3 +16,7 @@ When touching the CPU, you should see something like this on the screen:
 
 
 <img width="1408" alt="Screen Shot 2021-07-30 at 2 10 11 PM" src="https://user-images.githubusercontent.com/85308587/127694567-923ca901-5622-4a69-aa86-8e711d6481e9.png">
+
+caveats:
+- depending on the thermal mass of the object, it might take a second or two for it to react
+- if you hold it for too long, the object might heat up and trigger 'not pressed' state
